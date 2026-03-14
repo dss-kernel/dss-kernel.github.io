@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>DSS-Kernel Official</title>
+    <meta charset="UTF-8">
+    <title>DSS-Kernel Shop | Premium MCU</title>
+    <style>
+        :root { --primary-color: #2c3e50; --accent-color: #e74c3c; }
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+        header { background: var(--primary-color); color: white; padding: 20px; text-align: center; }
+        .product-container { max-width: 900px; margin: 40px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: flex; gap: 30px; }
+        .product-image { flex: 1; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+        .product-image img { width: 100%; display: block; }
+        .product-info { flex: 1.5; }
+        .badge { background: var(--accent-color); color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.8em; }
+        .price { font-size: 1.5em; color: #c0392b; font-weight: bold; margin: 15px 0; }
+        .spec-list { background: #f1f1f1; padding: 15px; border-radius: 8px; list-style: none; }
+        .spec-list li { margin-bottom: 8px; font-size: 0.9em; }
+        .btn-group { margin-top: 25px; display: flex; gap: 10px; }
+        .btn { flex: 1; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; text-decoration: none; text-align: center; }
+        .btn-buy { background: #27ae60; color: white; }
+        .btn-docs { background: #3498db; color: white; }
+        .btn:hover { opacity: 0.8; }
+    </style>
 </head>
 <body>
-    <h1>products</h1>
+
+<header>
+    <h1>DSS-Kernel Parts Shop</h1>
+    <p>엔지니어가 검증한 최적의 부품 솔루션</p>
+</header>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="https://via.placeholder.com/400x400?text=Premium+MCU+Module" alt="MCU 이미지">
+    </div>
+
+    <div class="product-info">
+        <span class="badge">BEST SELLER</span>
+        <h2>High-Performance 32-bit MCU Module</h2>
+        <p>로우레벨 제어와 안정적인 전원 설계가 반영된 최적의 개발 모듈입니다.</p>
+        
+        <div class="price">₩ 가격협의 (스마트스토어 확인)</div>
+
+        <ul class="STM32 High-Performance Development Module (Cortex-M)">
+            <li>✅ <strong>Core:</strong> 강력한 ARM® Cortex®-M 기반 연산 성능</li>
+            <li>✅ <strong>Peripherals:</strong> 다채로운 UART, SPI, I2C, ADC 채널 확보</li>
+            <li>✅ <strong>Eco-system:</strong> STM32CubeIDE 및 DSS-Kernel 커스텀 라이브러리 호환</li>
+            <li>✅ <strong>Docs: [특전]</strong> 초보자도 바로 띄우는 'Hello World' 회로도 동봉</li>
+        </ul>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-buy">네이버 스마트스토어에서 구매</a>
+            <a href="../portfolio/index.html" class="btn btn-docs">기술 문서 및 회로도 보기</a>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
