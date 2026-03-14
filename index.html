@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>DSS-Kernel Official</title>
+    <meta charset="UTF-8">
+    <title>DSS-Kernel</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; text-align: center; background: #f4f4f4; }
+        .container { margin-top: 100px; }
+        .card { 
+            display: inline-block; width: 300px; padding: 40px; margin: 20px;
+            background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer; transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        h2 { color: #333; }
+        p { color: #666; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to DSS-Kernel</h1>
+    <div class="container">
+        <h1>Welcome to DSS-Kernel</h1>
+        <p>하드웨어 민주화를 위한 기술과 자본의 결합</p>
+        
+        <div class="card" onclick="location.href='./shop/'">
+            <h2>🛒 Parts Shop</h2>
+            <p>검증된 전자부품과<br>최적화된 회로도 설계 지원</p>
+        </div>
+
+        <div class="card" onclick="location.href='./portfolio/'">
+            <h2>🔬 Tech Lab</h2>
+            <p>32-bit 커널 개발 및<br>Mission 1 달성기</p>
+        </div>
+    </div>
 </body>
 </html>
